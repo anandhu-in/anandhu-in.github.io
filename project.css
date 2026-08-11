@@ -1,0 +1,1342 @@
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#050505;
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
+    overflow-x:hidden;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff3b3b;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#080808;
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.topbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:24px 7%;
+
+    backdrop-filter:blur(14px);
+
+    background:rgba(5,5,5,.92);
+
+    border-bottom:1px solid #311010;
+
+}
+
+.logo h2{
+
+    color:#ffd84d;
+
+    letter-spacing:5px;
+
+    font-size:30px;
+
+}
+
+.logo span{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#808080;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:#c9c9c9;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ff3b3b;
+
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    padding:110px 10%;
+
+    position:relative;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:0;
+
+    width:500px;
+
+    height:500px;
+
+    background:radial-gradient(circle,
+    rgba(255,59,59,.12),
+    transparent 70%);
+
+    filter:blur(30px);
+
+}
+
+.tag{
+
+    color:#ff3b3b;
+
+    font-family:"JetBrains Mono",monospace;
+
+    letter-spacing:3px;
+
+}
+
+.hero h1{
+
+    font-size:78px;
+
+    margin-top:15px;
+
+    color:#ffd84d;
+
+}
+
+.hero-line{
+
+    width:170px;
+
+    height:2px;
+
+    background:#ff3b3b;
+
+    margin:30px 0;
+
+}
+
+.hero-text{
+
+    max-width:700px;
+
+    line-height:2;
+
+    color:#949494;
+
+}
+
+
+/* ==========================================================
+   DASHBOARD
+========================================================== */
+
+.dashboard{
+
+    padding:0 10% 100px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.dash-card{
+
+    background:#0b0707;
+
+    border:1px solid #341111;
+
+    padding:35px;
+
+    border-radius:16px;
+
+    transition:.35s;
+
+}
+
+.dash-card:hover{
+
+    border-color:#ff3b3b;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 35px rgba(255,59,59,.15);
+
+}
+
+.dash-card h3{
+
+    font-size:38px;
+
+    color:#ff3b3b;
+
+}
+
+.dash-card p{
+
+    margin-top:10px;
+
+    color:#989898;
+
+}
+
+
+/* ==========================================================
+   PROJECTS
+========================================================== */
+
+.projects{
+
+    padding:0 10% 120px;
+
+}
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    color:#ff3b3b;
+
+    letter-spacing:3px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    margin-top:10px;
+
+}
+/* ==========================================================
+   PROJECT CARD
+========================================================== */
+
+.project-card{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:45px;
+
+    margin-bottom:60px;
+
+    padding:45px;
+
+    background:#0b0707;
+
+    border:1px solid #341111;
+
+    border-radius:18px;
+
+    transition:.45s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#ff3b3b;
+
+    transition:.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#ff3b3b;
+
+    box-shadow:
+
+    0 0 45px rgba(255,59,59,.18),
+
+    0 25px 70px rgba(0,0,0,.55);
+
+}
+
+.project-card:hover::before{
+
+    width:8px;
+
+}
+
+
+/* ==========================================================
+   LEFT
+========================================================== */
+
+.status{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border:1px solid #ff3b3b;
+
+    color:#ff3b3b;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    border-radius:50px;
+
+    font-family:"JetBrains Mono",monospace;
+
+}
+
+.project-left h2{
+
+    margin:28px 0 18px;
+
+    font-size:38px;
+
+    color:#ffd84d;
+
+}
+
+.project-left p{
+
+    color:#9d9d9d;
+
+    line-height:2;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ==========================================================
+   TAGS
+========================================================== */
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+.tags span{
+
+    padding:9px 18px;
+
+    border-radius:50px;
+
+    border:1px solid #3d1010;
+
+    background:#120909;
+
+    color:#d6d6d6;
+
+    font-size:12px;
+
+    transition:.3s;
+
+}
+
+.tags span:hover{
+
+    border-color:#ff3b3b;
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 34px;
+
+    background:#ff3b3b;
+
+    border-radius:8px;
+
+    color:#fff;
+
+    letter-spacing:2px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    background:#ff5b5b;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 30px rgba(255,59,59,.35);
+
+}
+
+
+/* ==========================================================
+   RIGHT
+========================================================== */
+
+.project-right{
+
+    display:grid;
+
+    gap:22px;
+
+}
+
+.meta{
+
+    padding:20px;
+
+    border-radius:12px;
+
+    border:1px solid #2d1010;
+
+    background:#090606;
+
+}
+
+.meta p{
+
+    color:#7c7c7c;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.meta h4{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+}
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    padding:100px 10%;
+
+    text-align:center;
+
+    border-top:1px solid #2a1010;
+
+    background:#070505;
+
+}
+
+.footer h2{
+
+    color:#ff3b3b;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+    letter-spacing:2px;
+
+}
+
+.footer p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#8f8f8f;
+
+    line-height:2;
+
+}
+
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.project-card{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+}
+
+.project-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ==========================================================
+   BACKGROUND EFFECTS
+========================================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,59,59,.03) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,59,59,.03) 1px,transparent 1px);
+
+    background-size:55px 55px;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top right,
+
+    rgba(255,59,59,.12),
+
+    transparent 45%),
+
+    radial-gradient(circle at bottom left,
+
+    rgba(255,80,80,.06),
+
+    transparent 35%);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1100px){
+
+.dashboard{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.project-card{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.topbar{
+
+flex-direction:column;
+
+gap:20px;
+
+padding:25px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+padding:80px 7%;
+
+}
+
+.hero h1{
+
+font-size:54px;
+
+}
+
+.dashboard{
+
+grid-template-columns:1fr;
+
+padding:0 7% 80px;
+
+}
+
+.projects{
+
+padding:0 7% 100px;
+
+}
+
+.project-card{
+
+padding:30px;
+
+}
+
+.project-left h2{
+
+font-size:30px;
+
+}
+
+.tags{
+
+gap:10px;
+
+}
+
+.tags span{
+
+font-size:11px;
+
+padding:8px 14px;
+
+}
+
+.footer{
+
+padding:70px 7%;
+
+}
+
+.footer h2{
+
+font-size:30px;
+
+}
+
+}
+/* ==========================================================
+   DOSSIER
+========================================================== */
+
+.dossier{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.88);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.45s;
+
+    z-index:99999;
+
+}
+
+.dossier.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.dossier-window{
+
+    width:min(1000px,90vw);
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    padding:55px;
+
+    border-radius:20px;
+
+    position:relative;
+
+    animation:popup .45s ease;
+
+}
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+
+transform:scale(.9) translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1) translateY(0);
+
+}
+
+}
+
+#closeDossier{
+
+    position:absolute;
+
+    right:28px;
+
+    top:22px;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#closeDossier:hover{
+
+    transform:rotate(90deg);
+
+}
+
+
+/* ==========================================================
+   COMMON
+========================================================== */
+
+.dossier-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+.dossier-title{
+
+    font-size:46px;
+
+    font-weight:900;
+
+}
+
+.classified{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    font-family:"JetBrains Mono",monospace;
+
+}
+
+.dossier-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    margin:40px 0;
+
+}
+
+.info-box{
+
+    padding:22px;
+
+    border-radius:12px;
+
+}
+
+.info-box p{
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    margin-bottom:8px;
+
+    opacity:.7;
+
+}
+
+.info-box h4{
+
+    font-size:17px;
+
+}
+
+.dossier-section{
+
+    margin-top:40px;
+
+}
+
+.dossier-section h3{
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.dossier-section p{
+
+    line-height:2;
+
+    opacity:.85;
+
+}
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.tech-stack span{
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+}
+
+.objectives{
+
+    margin-top:20px;
+
+}
+
+.objectives li{
+
+    list-style:none;
+
+    margin:14px 0;
+
+}
+
+
+/* ==========================================================
+   OBSCURA
+========================================================== */
+
+.dossier.obscura .dossier-window{
+
+    background:#07101d;
+
+    border:1px solid #1e5eff;
+
+    box-shadow:0 0 60px rgba(30,94,255,.25);
+
+}
+
+.dossier.obscura .dossier-title{
+
+    color:#4b8dff;
+
+}
+
+.dossier.obscura .classified{
+
+    color:#4b8dff;
+
+    border:1px solid #4b8dff;
+
+}
+
+.dossier.obscura .info-box{
+
+    background:#0d1828;
+
+    border:1px solid #22395d;
+
+}
+
+.dossier.obscura .tech-stack span{
+
+    background:#0d1828;
+
+    border:1px solid #1e5eff;
+
+}
+
+
+/* ==========================================================
+   HACK20
+========================================================== */
+
+.dossier.hack20 .dossier-window{
+
+    background:#07120b;
+
+    border:1px solid #23d85d;
+
+    box-shadow:0 0 60px rgba(35,216,93,.22);
+
+}
+
+.dossier.hack20 .dossier-title{
+
+    color:#23d85d;
+
+}
+
+.dossier.hack20 .classified{
+
+    color:#23d85d;
+
+    border:1px solid #23d85d;
+
+}
+
+.dossier.hack20 .info-box{
+
+    background:#0c1a11;
+
+    border:1px solid #214b30;
+
+}
+
+.dossier.hack20 .tech-stack span{
+
+    background:#0c1a11;
+
+    border:1px solid #23d85d;
+
+}
+
+
+/* ==========================================================
+   COLLEGE
+========================================================== */
+
+.dossier.college .dossier-window{
+
+    background:#f8fbff;
+
+    color:#1b1b1b;
+
+    border:1px solid #58a6ff;
+
+    box-shadow:0 0 60px rgba(88,166,255,.18);
+
+}
+
+.dossier.college .dossier-title{
+
+    color:#2f83ff;
+
+}
+
+.dossier.college .classified{
+
+    color:#2f83ff;
+
+    border:1px solid #2f83ff;
+
+}
+
+.dossier.college .info-box{
+
+    background:#eef7ff;
+
+    border:1px solid #b7d9ff;
+
+}
+
+.dossier.college .tech-stack span{
+
+    background:#eef7ff;
+
+    border:1px solid #58a6ff;
+
+}
+
+.dossier.college p,
+.dossier.college li{
+
+    color:#404040;
+
+}
+/* ===========================================
+   DOSSIER BOOT SCREEN
+=========================================== */
+
+.boot-screen{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:450px;
+
+    text-align:center;
+
+}
+
+.boot-screen h2{
+
+    color:#ffd84d;
+
+    letter-spacing:4px;
+
+    margin-bottom:35px;
+
+}
+
+.boot-bar{
+
+    width:420px;
+
+    height:10px;
+
+    background:#111;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    margin-bottom:40px;
+
+}
+
+.boot-bar span{
+
+    display:block;
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#ff3b3b,#ff8b8b);
+
+    animation:bootload 1.2s linear forwards;
+
+}
+
+.boot-log{
+
+    font-family:"JetBrains Mono",monospace;
+
+    color:#9a9a9a;
+
+    line-height:2;
+
+    text-align:left;
+
+}
+
+@keyframes bootload{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+/* ==========================================================
+   MOBILE DOSSIER
+========================================================== */
+
+@media(max-width:768px){
+
+    .dossier-window{
+        width:94vw;
+        max-height:92vh;
+        padding:35px 22px;
+        border-radius:14px;
+    }
+
+    .dossier-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+        margin-bottom:30px;
+    }
+
+    .dossier-title{
+        font-size:32px;
+        line-height:1.15;
+    }
+
+    .classified{
+        font-size:10px;
+        letter-spacing:2px;
+        padding:7px 14px;
+    }
+
+    .dossier-grid{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+        margin:30px 0;
+    }
+
+    .info-box{
+        padding:16px;
+    }
+
+    .info-box h4{
+        font-size:14px;
+    }
+
+    .dossier-section{
+        margin-top:30px;
+    }
+
+    .dossier-section h3{
+        font-size:19px;
+    }
+
+    .dossier-section p{
+        font-size:13px;
+        line-height:1.8;
+    }
+
+    .tech-stack{
+        gap:8px;
+    }
+
+    .tech-stack span{
+        padding:8px 12px;
+        font-size:11px;
+    }
+
+    .boot-bar{
+        width:80vw;
+        max-width:420px;
+    }
+
+    #closeDossier{
+        right:18px;
+        top:14px;
+        font-size:30px;
+    }
+
+}
+@media(max-width:400px){
+
+    .topbar{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .project-card{
+        padding:22px;
+    }
+
+    .project-left h2{
+        font-size:26px;
+    }
+
+    .dossier-window{
+        width:96vw;
+        padding:30px 18px;
+    }
+
+    .dossier-grid{
+        grid-template-columns:1fr;
+    }
+
+}

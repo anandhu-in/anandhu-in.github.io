@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Marvel Animation</title>
+
+    <link rel="preload"
+          as="image"
+          href="combined-20image.jpg">
+
+    <link rel="stylesheet"
+          href="title.css">
+
+</head>
+<body>
+
+  <input class="retrigger" type="radio" name="rerun" id="retrigger--1">
+  <input class="retrigger" type="radio" name="rerun" id="retrigger--2" checked>
+
+  <div class="bg"></div>
+
+  
+
+  <div class="pane">
+    <div class="rotate">
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+      <div class="logo">ANANDHU  </div>
+     
+    </div>
+  </div>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    document.body.classList.add("animate-start");
+
+    setTimeout(() => {
+
+        window.parent.postMessage("INTRO_FINISHED", "*");
+
+    }, 7500);
+
+});
+</script>
+</body>
+</html>
+

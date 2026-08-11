@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caliber Database</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="caliber.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="logo">
+        <h2>CALIBER</h2>
+        <span>Research Database</span>
+    </div>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="resume/cv_1.pdf">RESUME</a>
+    </nav>
+</header>
+
+<div class="database-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <h3>MODULES</h3>
+        <a href="#web">01 WEB APPLICATION SECURITY</a>
+        <a href="#pentest">02 PENETRATION TESTING</a>
+        <a href="#research">03 SECURITY RESEARCH</a>
+        <a href="#tools">04 SECURITY TOOLS</a>
+        <a href="#ad">05 ACTIVE DIRECTORY</a>
+        <a href="#ios">06 IOS SECURITY</a>
+    </aside>
+
+    <!-- RIGHT CONTENT -->
+    <main class="database-content">
+
+        <!-- HERO -->
+        <section class="database-hero">
+            <p class="database-tag">SECURITY KNOWLEDGE BASE</p>
+            <h1>CALIBER DATABASE</h1>
+            <div class="hero-line"></div>
+            <p class="hero-description">
+                Every skill listed below represents practical learning,
+                hands-on labs, Capture The Flag environments,
+                research, and continuous improvement.
+            </p>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 01 — WEB APPLICATION SECURITY -->
+        <!-- ====================================== -->
+        <section id="web" class="database-section">
+
+            <div class="module-header">
+                <span>MODULE 01</span>
+                <h2>WEB APPLICATION SECURITY</h2>
+            </div>
+
+            <div class="overall-progress">
+                <div>
+                    <h4>Overall Progress</h4>
+                    <p>Learning Progress</p>
+                </div>
+                <span class="overall-percent counter" data-target="82">0%</span>
+            </div>
+            <div class="overall-bar">
+                <div class="overall-fill" data-width="82"></div>
+            </div>
+
+            <div class="category">
+                <h3>Injection</h3>
+
+                <div class="skill-card"
+                     data-title="SQL Injection"
+                     data-platforms="PortSwigger Web Security Academy, Hack The Box"
+                     data-tools="Burp Suite, sqlmap"
+                     data-techniques="Union-based, boolean-blind, time-based, error-based">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>SQL Injection</h4>
+                        <span class="counter" data-target="95">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="95"></div></div>
+                    <p class="skill-desc">Extracting and manipulating backend databases through crafted input.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Command Injection"
+                     data-platforms="PortSwigger, TryHackMe"
+                     data-tools="Burp Suite, Netcat"
+                     data-techniques="Direct injection, blind injection, out-of-band">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Command Injection</h4>
+                        <span class="counter" data-target="90">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="90"></div></div>
+                    <p class="skill-desc">Executing OS commands through unsanitized input fields.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="XXE"
+                     data-platforms="PortSwigger Web Security Academy"
+                     data-tools="Burp Suite"
+                     data-techniques="Classic XXE, blind XXE, XXE via file upload">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>XXE</h4>
+                        <span class="counter" data-target="84">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="84"></div></div>
+                    <p class="skill-desc">Abusing XML parsers to read files or trigger SSRF.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="SSTI"
+                     data-platforms="PortSwigger, Hack The Box"
+                     data-tools="Burp Suite, tplmap"
+                     data-techniques="Jinja2, Twig, FreeMarker payload crafting">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>SSTI</h4>
+                        <span class="counter" data-target="75">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="75"></div></div>
+                    <p class="skill-desc">Injecting template syntax to achieve remote code execution.</p>
+                </div>
+
+            </div>
+
+            <div class="category">
+                <h3>Authentication</h3>
+
+                <div class="skill-card"
+                     data-title="JWT"
+                     data-platforms="PortSwigger Web Security Academy"
+                     data-tools="Burp Suite, jwt_tool"
+                     data-techniques="alg:none, key confusion, weak secret brute force">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>JWT</h4>
+                        <span class="counter" data-target="86">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="86"></div></div>
+                    <p class="skill-desc">Exploiting weak signing, algorithm confusion, and claim tampering.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Session Management"
+                     data-platforms="PortSwigger, Hack The Box"
+                     data-tools="Burp Suite"
+                     data-techniques="Session fixation, token prediction, cookie tampering">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Session Management</h4>
+                        <span class="counter" data-target="92">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="92"></div></div>
+                    <p class="skill-desc">Identifying session fixation, hijacking, and token weaknesses.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="OAuth"
+                     data-platforms="PortSwigger Web Security Academy"
+                     data-tools="Burp Suite"
+                     data-techniques="Redirect URI manipulation, CSRF on auth flow, token leakage">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>OAuth</h4>
+                        <span class="counter" data-target="68">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="68"></div></div>
+                    <p class="skill-desc">Testing OAuth / OpenID flows for redirect and token leakage flaws.</p>
+                </div>
+
+            </div>
+
+            <div class="category">
+                <h3>Client Side</h3>
+
+                <div class="skill-card"
+                     data-title="XSS"
+                     data-platforms="PortSwigger, Hack The Box"
+                     data-tools="Burp Suite, XSStrike"
+                     data-techniques="Reflected, stored, DOM-based XSS">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>XSS</h4>
+                        <span class="counter" data-target="94">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="94"></div></div>
+                    <p class="skill-desc">Injecting scripts to hijack sessions and manipulate the DOM.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="CSRF"
+                     data-platforms="PortSwigger Web Security Academy"
+                     data-tools="Burp Suite"
+                     data-techniques="Token bypass, SameSite bypass, JSON CSRF">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>CSRF</h4>
+                        <span class="counter" data-target="85">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="85"></div></div>
+                    <p class="skill-desc">Forcing authenticated users to perform unintended actions.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Clickjacking"
+                     data-platforms="PortSwigger Web Security Academy"
+                     data-tools="Burp Suite"
+                     data-techniques="Frame-busting bypass, X-Frame-Options misconfiguration">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Clickjacking</h4>
+                        <span class="counter" data-target="78">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="78"></div></div>
+                    <p class="skill-desc">Overlaying invisible frames to hijack user clicks.</p>
+                </div>
+
+            </div>
+
+            <div class="category">
+                <h3>Practice Platforms</h3>
+                <ul class="platform-list">
+                    <li>✔ PortSwigger Web Security Academy</li>
+                    <li>✔ Hack The Box</li>
+                    <li>✔ TryHackMe</li>
+                    <li>✔ OBSCURA (Custom CTF)</li>
+                    <li>✔ HACK 20 (Custom CTF)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 02 — PENETRATION TESTING -->
+        <!-- ====================================== -->
+        <section id="pentest" class="database-section">
+
+            <div class="module-header">
+                <span>MODULE 02</span>
+                <h2>PENETRATION TESTING</h2>
+            </div>
+
+            <div class="overall-progress">
+                <div>
+                    <h4>Overall Proficiency</h4>
+                    <p>Learning Progress</p>
+                </div>
+                <span class="overall-percent counter" data-target="90">0%</span>
+            </div>
+            <div class="overall-bar">
+                <div class="overall-fill" data-width="90"></div>
+            </div>
+
+            <div class="category">
+                <h3>Core Skills</h3>
+
+                <div class="skill-card"
+                     data-title="Enumeration"
+                     data-platforms="Hack The Box, TryHackMe"
+                     data-tools="Nmap, Gobuster, enum4linux"
+                     data-techniques="Port scanning, service fingerprinting, directory brute force">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Enumeration</h4>
+                        <span class="counter" data-target="95">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="95"></div></div>
+                    <p class="skill-desc">Mapping hosts, services, and attack surface before exploitation.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Privilege Escalation"
+                     data-platforms="Hack The Box"
+                     data-tools="LinPEAS, WinPEAS"
+                     data-techniques="Kernel exploits, misconfigured sudo, SUID binaries">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Privilege Escalation</h4>
+                        <span class="counter" data-target="85">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="85"></div></div>
+                    <p class="skill-desc">Escalating from a low-privilege shell to root or admin.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Pivoting"
+                     data-platforms="Hack The Box, TryHackMe"
+                     data-tools="Chisel, SSH tunneling, Proxychains"
+                     data-techniques="Port forwarding, double pivoting, SOCKS proxy chains">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Pivoting</h4>
+                        <span class="counter" data-target="70">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="70"></div></div>
+                    <p class="skill-desc">Moving laterally across segmented networks.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Post Exploitation"
+                     data-platforms="Hack The Box"
+                     data-tools="Mimikatz, Metasploit"
+                     data-techniques="Credential dumping, persistence, data exfiltration">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Post Exploitation</h4>
+                        <span class="counter" data-target="80">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="80"></div></div>
+                    <p class="skill-desc">Maintaining access and extracting value after a foothold.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 03 — SECURITY RESEARCH -->
+        <!-- ====================================== -->
+        <section id="research" class="database-section">
+
+            <div class="module-header">
+                <span>MODULE 03</span>
+                <h2>SECURITY RESEARCH</h2>
+            </div>
+
+            <div class="overall-progress">
+                <div>
+                    <h4>Overall Proficiency</h4>
+                    <p>Learning Progress</p>
+                </div>
+                <span class="overall-percent counter" data-target="95">0%</span>
+            </div>
+            <div class="overall-bar">
+                <div class="overall-fill" data-width="95"></div>
+            </div>
+
+            <div class="category">
+                <h3>Core Skills</h3>
+
+                <div class="skill-card"
+                     data-title="CVE Analysis"
+                     data-platforms="Self-research"
+                     data-tools="Ghidra, GDB"
+                     data-techniques="Patch diffing, root cause analysis">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>CVE Analysis</h4>
+                        <span class="counter" data-target="90">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="90"></div></div>
+                    <p class="skill-desc">Reproducing and understanding publicly disclosed vulnerabilities.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Threat Research"
+                     data-platforms="Open-source intelligence"
+                     data-tools="MITRE ATT&CK, OSINT tools"
+                     data-techniques="TTP mapping, IOC correlation">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Threat Research</h4>
+                        <span class="counter" data-target="85">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="85"></div></div>
+                    <p class="skill-desc">Tracking emerging attack techniques and threat actor behavior.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Exploit Analysis"
+                     data-platforms="Exploit-DB"
+                     data-tools="Python, GDB"
+                     data-techniques="Stack analysis, payload reconstruction">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Exploit Analysis</h4>
+                        <span class="counter" data-target="92">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="92"></div></div>
+                    <p class="skill-desc">Breaking down public exploits to understand their mechanics.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="CTF Development"
+                     data-platforms="Self-hosted labs"
+                     data-tools="Docker, Flask"
+                     data-techniques="Chained vulnerability design, realistic scenario building">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>CTF Development</h4>
+                        <span class="counter" data-target="96">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="96"></div></div>
+                    <p class="skill-desc">Designing custom vulnerable environments for others to attack.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 04 — SECURITY TOOLS -->
+        <!-- ====================================== -->
+        <section id="tools" class="database-section">
+
+            <div class="module-header">
+                <span>MODULE 04</span>
+                <h2>SECURITY TOOLS</h2>
+            </div>
+
+            <div class="overall-progress">
+                <div>
+                    <h4>Overall Proficiency</h4>
+                    <p>Learning Progress</p>
+                </div>
+                <span class="overall-percent counter" data-target="88">0%</span>
+            </div>
+            <div class="overall-bar">
+                <div class="overall-fill" data-width="88"></div>
+            </div>
+
+            <div class="category">
+                <h3>Core Tools</h3>
+
+                <div class="skill-card"
+                     data-title="Burp Suite"
+                     data-platforms="PortSwigger Web Security Academy"
+                     data-tools="Burp Suite Professional"
+                     data-techniques="Repeater, Intruder, extensions via the BApp Store">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Burp Suite</h4>
+                        <span class="counter" data-target="95">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="95"></div></div>
+                    <p class="skill-desc">Daily driver for intercepting, testing, and automating web traffic.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Nmap"
+                     data-platforms="Hack The Box, TryHackMe"
+                     data-tools="Nmap"
+                     data-techniques="Service/version detection, NSE scripting, stealth scans">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Nmap</h4>
+                        <span class="counter" data-target="95">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="95"></div></div>
+                    <p class="skill-desc">Network discovery and service enumeration for recon.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Metasploit"
+                     data-platforms="Hack The Box"
+                     data-tools="Metasploit Framework"
+                     data-techniques="Module chaining, payload generation, post-exploitation modules">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Metasploit</h4>
+                        <span class="counter" data-target="90">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="90"></div></div>
+                    <p class="skill-desc">Exploitation framework for validating and chaining vulnerabilities.</p>
+                </div>
+
+                <div class="skill-card"
+                     data-title="Gobuster / FFUF"
+                     data-platforms="Hack The Box, TryHackMe"
+                     data-tools="Gobuster, FFUF"
+                     data-techniques="Directory brute forcing, vhost discovery, parameter fuzzing">
+                    <div class="mouse-light"></div>
+                    <div class="skill-title">
+                        <h4>Gobuster / FFUF</h4>
+                        <span class="counter" data-target="95">0%</span>
+                    </div>
+                    <div class="bar"><div class="fill" data-width="95"></div></div>
+                    <p class="skill-desc">Fast content and parameter discovery on web targets.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 05 — ACTIVE DIRECTORY (in progress) -->
+        <!-- ====================================== -->
+        <section id="ad" class="database-section">
+
+            <div class="module-header">
+                <span>MODULE 05</span>
+                <h2>ACTIVE DIRECTORY</h2>
+            </div>
+
+            <div class="coming-soon">
+                <h3>MISSION IN PROGRESS...</h3>
+                <p>
+                    Currently learning Active Directory attacks, Windows Internals,
+                    Kerberos, BloodHound, Privilege Escalation, and Domain Exploitation.
+                </p>
+            </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 06 — iOS SECURITY (in progress) -->
+        <!-- ====================================== -->
+        <section id="ios" class="database-section">
+
+            <div class="module-header">
+                <span>MODULE 06</span>
+                <h2>iOS SECURITY</h2>
+            </div>
+
+            <div class="coming-soon">
+                <h3>MISSION IN PROGRESS...</h3>
+                <p>
+                    Learning iOS Internals, IPA Analysis, MobSF, Ghidra,
+                    Runtime Analysis, Frida, and Objective-C Security.
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 CALIBER DATABASE — ANANDHU</p>
+        </footer>
+
+    </main>
+</div>
+
+<!-- SKILL DETAIL MODAL -->
+<div id="skillModal" class="modal">
+    <div class="modal-box">
+        <span id="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div class="modalLevel"></div>
+        <h3>Platforms</h3>
+        <p id="modalPlatforms"></p>
+        <h3>Tools</h3>
+        <p id="modalTools"></p>
+        <h3>Techniques</h3>
+        <p id="modalTechniques"></p>
+    </div>
+</div>
+
+<script src="caliber.js"></script>
+</body>
+</html>
